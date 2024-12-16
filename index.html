@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Косметология доктора Мечтальниной</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="./static/jpg/7.png" >
+    <h1>Косметология доктора Мечтальниной</h1>
+    <p>Нежная забота о вашей красоте.</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>О нас</h2>
+      <p>Добро пожаловать в клинику косметологии доктора Мечтальниной! 
+      Мы предлагаем широкий спектр услуг для поддержания молодости и красоты.
+      Наши специалисты - настоящие профессионалы, которые заботятся о каждом пациенте, 
+      используя современные методики и качественные материалы. </p>
+    </section>
+
+    <section class="services">
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service">
+          <img src="./static/jpg/1.png" alt="Ботулинотерапия">
+          <h3>Ботулинотерапия</h3>
+          <p>Ботокс - это один из самых популярных методов для разглаживания морщин. 
+          Он позволяет  устранить  мимические  морщины  на  лбу,  между  бровями,  вокруг  глаз  и  других  областях.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./static/jpg/2.png" alt="Консультация врача">
+          <h3>Консультация врача</h3>
+          <p>Первичная консультация косметолога -  это  важный  этап  для  подбора  индивидуальной  программы  по  уходу  за  кожей. 
+          Врач  осмотрит  вас,  соберет  анамнез,  определит  тип  вашей  кожи  и  подберет  необходимые  процедуры.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./static/jpg/3.png" alt="Фраксель">
+          <h3>Фраксель</h3>
+          <p>Фракционное лазерное омоложение -  это  эффективный  метод  для  улучшения  структуры  и  тонуса  кожи, 
+          уменьшения  морщин,  пигментации  и  рубцов.  
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2>Отзывы</h2>
+      <div class="reviews-slider">
+        <div class="review">
+          <img src="./static/jpg/4.jpg" alt="Отзыв от клиента Кира">
+          <div class="review-content">
+            <h3>Кира</h3>
+            <p>Я очень рада, что обратилась в клинику доктора Мечтальниной! Врач очень профессиональна и внимательна, она подробно объяснила мне все процедуры и подобрала оптимальное лечение для моей кожи. Результатом я очень довольна!</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="./static/jpg/5.jpg" alt="Отзыв от клиента Марина">
+          <div class="review-content">
+            <h3>Марина</h3>
+            <p>Благодаря доктору Мечтальниной я наконец избавилась от пигментации на лице, которая меня очень беспокоила. Спасибо за профессионализм и индивидуальный подход!</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="./static/jpg/6.jpg" alt="Отзыв от клиента Александра">
+          <div class="review-content">
+            <h3>Александра</h3>
+            <p>Я всегда с трепетом относился к процедурам омоложения, но доктор Мечтальнина рассеяла все мои сомнения. Теперь я чувствую себя моложе и увереннее в себе.</p>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-buttons">
+        <button id="prev" aria-label="Предыдущий">&lt;</button>
+        <button id="next" aria-label="Следующий">&gt;</button>
+      </div>
+    </section>
+    
+    
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <div class="contacts-info">
+        <p>Адрес: г.Жуковский ул.Строительная, 14к3</p>
+        <p>Телефон: +7(499)638-27-92</p>
+        <p>Время работы: 10:00-20:00</p>
+      </div>
+      
+      <div class="contacts-form">
+        <h3>Оставьте заявку</h3>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Замените на ваш Access Key -->
+            <input type="hidden" name="access_key" value="d06cdb6f-df23-47a7-b3ad-42449205ca14">
+            
+            <!-- Поля формы -->
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <textarea name="message" placeholder="Сообщение" required></textarea>
+            
+            <!-- Защита от спама -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <!-- Кнопка отправки -->
+            <button type="submit">Отправить</button>
+        </form>
+    
+        <!-- Этот элемент будет показывать результат (успех/ошибка) отправки -->
+        <div id="result" style="display: none;"></div>
+    </div>
+    
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Косметология доктора Мечтальниной. Все права защищены.</p>
+    <a href="#">Политика конфиденциальности</a>
+  </footer>
+
+<script src="./static/js/script.js"></script>
+</body>
+</html>
